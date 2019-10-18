@@ -13,4 +13,6 @@ Inspirational quotes rendered by category and qoute of the day. Navigation menu 
 # PostMVP
 Youtube videos rendered when a category is selected.
 
+# React Component Hierarchy 
+
 
