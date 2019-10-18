@@ -1,4 +1,5 @@
-#Project Description
+##Project Description
+
 This is a motivation mental health site. Once you enter through the landing page you are able to hear relaxing music and see inspirational quote as well videos. You are able to select a category to retrieve quotes specific to that as well as videos rendered through YouTube related to that.
 #Wireframes
 ![Artboard – 1](https://user-images.githubusercontent.com/55125468/67128381-7b3fa580-f1c9-11e9-9cb9-5c39b1ec3e7b.jpg)
