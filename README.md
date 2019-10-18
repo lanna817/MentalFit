@@ -14,5 +14,7 @@ Inspirational quotes rendered by category and qoute of the day. Navigation menu 
 Youtube videos rendered when a category is selected.
 
 # React Component Hierarchy 
+![Notes_191018_172917_344_1](https://user-images.githubusercontent.com/55125468/67129511-e2ab2480-f1cc-11e9-89a3-3c04c1c72431.jpg)
+
 
 
