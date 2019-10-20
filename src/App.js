@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import { Route, Link } from 'react-router-dom';
 import { getQuote } from './services/api-helper';
-import Home from './components/Home';
-import Button from './components/Button';
+import Intro from './components/Intro';
+import Site from './components/Site';
 
 
 
@@ -22,12 +22,14 @@ class App extends React.Component {
     this.setState({ quoteOfDay: quotes })
   }
 
+ 
+
 
   render() {
     return (
       <div className="app">
-        <Home qod={this.state.quoteOfDay} />
-        <Button />
+        <Route exact path='/' render={() => (<Intro qod={this.state.quoteOfDay} />)} />
+        <Route path='/site' render={() => (<Site />)} />
 
       </div>
     );
