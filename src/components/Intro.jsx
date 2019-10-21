@@ -15,7 +15,7 @@ export default function Intro(props) {
             <h2>{quoteDay.quote}</h2>
             <h3>-{quoteDay.author}</h3>
             <Link to='/site'>
-            <button onClick={props.handleClick} id='inspired-btn'>Get Inspired</button>
+            <button id='inspired-btn'>Get Inspired</button>
             </Link>
 
           </div>

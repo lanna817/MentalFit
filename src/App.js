@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Route, Link } from 'react-router-dom';
-import { getQuote } from './services/api-helper';
+import { getQuote, getCate } from './services/api-helper';
 import Intro from './components/Intro';
 import Site from './components/Site';
 
@@ -12,7 +12,9 @@ class App extends React.Component {
     super(props);
     this.state = {
 
-      quoteOfDay: []
+      quoteOfDay: [],
+     
+
     }
 
   }
@@ -22,7 +24,7 @@ class App extends React.Component {
     this.setState({ quoteOfDay: quotes })
   }
 
- 
+
 
 
   render() {
