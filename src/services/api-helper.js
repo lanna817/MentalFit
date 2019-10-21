@@ -9,3 +9,11 @@ export const getQuote = async () => {
 
 }
 
+export const getActive = async () => {
+  const response = await axios.get('http://www.boredapi.com/api/activity/')
+  console.log(response.data)
+
+
+
+
+}

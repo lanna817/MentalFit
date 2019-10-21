@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import { Route, Link } from 'react-router-dom';
-import { getQuote, getCate } from './services/api-helper';
+import { getQuote, getCate, getActive } from './services/api-helper';
 import Intro from './components/Intro';
 import Site from './components/Site';
+import Activity from './components/Activity';
 
 
 
@@ -13,7 +14,6 @@ class App extends React.Component {
     this.state = {
 
       quoteOfDay: [],
-     
 
     }
 
@@ -26,13 +26,15 @@ class App extends React.Component {
 
 
 
-
   render() {
     return (
       <div className="app">
+       
         <Route exact path='/' render={() => (<Intro qod={this.state.quoteOfDay} />)} />
+        <main>
         <Route path='/site' render={() => (<Site />)} />
-
+        <Route path='/activity'render={(props) => (<Activity activities={props.match.params.activities} />)} />
+        </main>
       </div>
     );
   }
