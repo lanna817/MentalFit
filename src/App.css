@@ -8,3 +8,13 @@ nav {
 #logo {
   margin-bottom: 10px;
 }
+
+.button-grp {
+  display: flex;
+  cursor: pointer;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
