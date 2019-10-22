@@ -11,7 +11,9 @@ export default function Nav() {
       </div>
       <div>
         <nav>
-          <a href='/home'>Home</a>
+          <Link to='/site'>
+            Home
+            </Link>
           <a href='/activity'>Activity</a>
           <a href='/relax'>Relax</a>
           <a href='/about'>About</a>

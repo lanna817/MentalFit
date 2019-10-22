@@ -9,7 +9,7 @@ import Footer from './Footer';
 export default function Site() {
   return (
     <div>
-      <Nav />
+      
       <Activity />
       <About />
       <Relax />

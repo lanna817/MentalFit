@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 import { Route, Link } from 'react-router-dom';
-import { getQuote, getCate, getActive } from './services/api-helper';
+import { getQuote, getActive } from './services/api-helper';
 import Intro from './components/Intro';
 import Site from './components/Site';
 import Activity from './components/Activity';
+import Nav from './components/Nav';
 
 
 
@@ -30,6 +31,7 @@ class App extends React.Component {
     return (
       <div className="app">
        
+          <Nav />
         <Route exact path='/' render={() => (<Intro qod={this.state.quoteOfDay} />)} />
         <main>
         <Route path='/site' render={() => (<Site />)} />
