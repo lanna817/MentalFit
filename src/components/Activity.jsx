@@ -18,7 +18,7 @@ class Activity extends React.Component {
   handleChange = (event) => {
     event.preventDefault()
     let value = event.target.id
-    if (event.target.id === 'social') {
+    if (event.target.id === '') {
       this.setState({
         type : value
       })
