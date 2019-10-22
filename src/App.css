@@ -21,26 +21,63 @@ nav {
  #mlogo {
   width: 27%;
   height: auto;
-  text-align: center;
+  text-align: left;
   position: absolute;
   z-index: 2;
 }
 
 #quo {
   font-size: 18px;
+  font-family: 'Inconsolata', monospace;
   position: absolute;
   z-index: 2;
-  top: 50%;
+  top: 14%;
   color:#17191d;
   font-weight: bold;
+  text-align: canter;
+  margin-left: 500px;
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  
 }
  #inspire-btn { 
-  text-align: center;
   padding: 30px;
-  font-size: 25px;
-  width: 30%;
-  align-content: center;
- 
+  text-align: center;
+  font-size: 35px;
+  /* width: 40%; */
+  margin-top: 180px;
+  background-color: #515864;
+  color: white;
+  /* transition: 0.3s; */
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(2);
+  animation: pulse 1.9s infinite;
+  font-family: 'Open Sans', sans-serif;
+
+  
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 8px rgba(4, 243, 211, 1);
+  }
+
+  100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+#inspire-btn:hover {
+  background-color: #04F3D3;
+  color: black;
 }
 
 #nature1 {

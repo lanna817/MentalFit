@@ -10,15 +10,17 @@ export default function Intro(props) {
       </Link>
       <img id='nature1' src={image} width='100%' height='100%' alt='man on edge of cliff' />
       { /*this name will be a logo created */}
+
       {
         props.qod.map(quoteDay => (
           <div id='quo' key={quoteDay.id}>
             <h2>{quoteDay.quote}</h2>
             <h3>-{quoteDay.author}</h3>
+            <div>
             <Link to='/site'>
             <button id="inspire-btn">Get Inspired</button>
             </Link>
-
+            </div>
           </div>
 
         )
