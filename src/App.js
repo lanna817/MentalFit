@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
+import logo from './logo.svg';
 import { Route, Link } from 'react-router-dom';
-import { getQuote, getActive } from './services/api-helper';
+import { getQuote, getMusic } from './services/api-helper';
 import Intro from './components/Intro';
 import Site from './components/Site';
 import Activity from './components/Activity';
 import Nav from './components/Nav';
+import Relax from './components/Relax';
 
 
 
@@ -15,6 +17,7 @@ class App extends React.Component {
     this.state = {
 
       quoteOfDay: [],
+
 
     }
 
@@ -26,16 +29,16 @@ class App extends React.Component {
   }
 
 
-
   render() {
     return (
       <div className="app">
-       
-          <Nav />
         <Route exact path='/' render={() => (<Intro qod={this.state.quoteOfDay} />)} />
-        <main>
-        <Route path='/site' render={() => (<Site />)} />
-        <Route path='/activity'render={(props) => (<Activity activities={props.match.params.activities} />)} />
+
+        <main>   
+          <Route path='/site' render={() => (<Site /> )} />
+        {/* <Nav /> */}
+          <Route path='/activity' render={(props) => (<Activity activities={props.match.params.activities} />)} />
+          <Route path='/relax' render={() => (<Relax />)} />
         </main>
       </div>
     );

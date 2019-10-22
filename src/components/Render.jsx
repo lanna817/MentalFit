@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 
 export default function Render(props) {
-  console.log(props)
   return (
 
     <div>
@@ -15,6 +14,7 @@ export default function Render(props) {
         </div>
       }
       <div className='button-grp'>
+
         <button id='recreational' onClick={props.handleClick}>Recreational</button>
 
         <button id='social' onClick={props.handleClick}>Social</button>

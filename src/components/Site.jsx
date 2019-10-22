@@ -10,10 +10,7 @@ export default function Site() {
   return (
     <div>
       
-      <Activity />
-      <About />
-      <Relax />
-      <Footer />
+    
 
 
 

@@ -4,6 +4,7 @@ import axios from 'axios';
 import Render from './Render';
 
 
+
 class Activity extends React.Component {
   constructor(props) {
     super(props);
@@ -13,41 +14,28 @@ class Activity extends React.Component {
 
     }
   }
-  
+
 
   handleChange = (event) => {
     event.preventDefault()
     let value = event.target.id
     if (event.target.id === '') {
       this.setState({
-        type : value
+        type: value
       })
     }
   }
 
-handleClick = async (event) => {
-  event.preventDefault()
-  let type = event.target.id
-  const response = await axios.get(`http://www.boredapi.com/api/activity/?type=${type}`)
-  console.log(response.data.type)
-  const activity = response.data.activity
-  this.setState({
-    activity 
-  })
-}
-
-  // handleSubmit = async (event) => {
-  //   event.preventDefault()
-  //   let type = this.state.type
-  //   const response = await axios.get(`http://www.boredapi.com/api/activity/?type=${type}`)
-  //   console.log(response.data)
-  //   const activity = response.data.activity
-  //   this.setState({
-  //      activity
-  //   })
-  // }
-
-
+  handleClick = async (event) => {
+    event.preventDefault()
+    let type = event.target.id
+    const response = await axios.get(`http://www.boredapi.com/api/activity/?type=${type}`)
+    console.log(response.data.type)
+    const activity = response.data.activity
+    this.setState({
+      activity
+    })
+  }
 
   render() {
 
@@ -55,10 +43,7 @@ handleClick = async (event) => {
 
       <div>
 
-        {/* <form onSubmit={this.handleSubmit}>
-          <input type='text' placeholder='Enter Type of Activity' onChange={this.handleChange} />
-       <button>Activate</button>
-        </form> */}
+
 
         <Render activity={this.state.activity} type={this.state.type} handleChange={this.handleChange} handleClick={this.handleClick} />
       </div>
