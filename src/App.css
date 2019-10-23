@@ -158,7 +158,7 @@ nav {
 .active-pg {
   position: absolute;
   z-index: 2;
-  top: 40%;
+  top: 20%;
   border: 1px solid black; 
   text-align: center;
   
@@ -168,21 +168,24 @@ nav {
 .text-desc{
   padding: 20px;
   border: 1px solid greenyellow;
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .button-grp {
   border: 1px solid orangered;
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  
+  padding: 20px;
+
 }
 
 #recreational, #social, #relaxation, 
 #cooking, #education, #busywork, #charity, #music {
-  margin: 50px;
-  padding: 30px;
-  font-size: 15px;
+  border-radius: 50%;
+  margin: 30px;
+  padding: 80px;
+  font-size: 23px;
+  font-family: 'Architects Daughter', cursive;
+
 }
 
 
