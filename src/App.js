@@ -6,7 +6,7 @@ import { getQuote, getMusic } from './services/api-helper';
 import Intro from './components/Intro';
 import Site from './components/Site';
 import Activity from './components/Activity';
-import Nav from './components/Nav';
+import Footer from './components/Footer';
 import Relax from './components/Relax';
 
 
@@ -34,11 +34,15 @@ class App extends React.Component {
       <div className="app">
         <Route exact path='/' render={() => (<Intro qod={this.state.quoteOfDay} />)} />
 
-        <main>   
+        <main> 
+          <div>
+          <Link to='/site'>
+          <img id="hmlogo" src='mflogo.png' alt='logo home' width="10%" />
+        </Link> 
           <Route path='/site' render={() => (<Site /> )} />
-        {/* <Nav /> */}
           <Route path='/activity' render={(props) => (<Activity activities={props.match.params.activities} />)} />
-          <Route path='/relax' render={() => (<Relax />)} />
+            <Route path='/relax' render={() => (<Relax />)} />
+            </div>
         </main>
       </div>
     );

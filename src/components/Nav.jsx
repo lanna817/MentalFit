@@ -6,9 +6,6 @@ export default function Nav() {
   return (
 
     <header>
-      <div id='logo'>
-        <Link to='/'>MentalFit</Link>
-      </div>
       <div>
         <nav>
           <Link to='/site'>
