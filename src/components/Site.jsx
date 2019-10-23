@@ -19,10 +19,17 @@ export default function Site() {
 
       <div className='text-top'>
         <nav>
-          <button className='btn-site'><a href='/activity'>Activity</a></button>
-          <button className='btn-site'><a href='/relax'>Relax</a></button>
-          <button className='btn-site'><a href='/about'>About</a></button>
-          </nav>
+          <Link to='/activity'>
+            <button className='btn-site'>Activity</button>
+          </Link>
+          <Link to='/relax'>
+            <button className='btn-site'>Relax</button>
+          </Link>
+          
+          <Link to='/about'>
+          <button className='btn-site'>About</button>
+          </Link>
+        </nav>
       </div>
 
       <img id="bghome" src={image} alt="boats on water" width='100%' height='100%' />

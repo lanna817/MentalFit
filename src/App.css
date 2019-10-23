@@ -14,17 +14,26 @@ nav {
   text-align: center;
   font-family: 'Inconsolata', monospace;
   padding: 20px;
-  opacity: 0.7;  
   display: block;
-
+  
 }
 
 .btn-site {
-  font-size: 20px;
+  opacity: 0.61;  
+  font-size: 30px;
   border-radius: 50%;
-  margin: 150px 150px 100px 150px;
-  padding: 80px;
-  
+  margin: 150px 150px 80px 150px;
+  padding: 90px;
+  background-color: #DED0CA;
+  cursor: pointer;
+  box-shadow: 0 4px #999;
+  border: none;
+}
+
+.btn-site:hover {
+  background-color:#8F867F;
+  opacity: 0.8;
+  color: white;
 }
 
 
@@ -72,12 +81,12 @@ nav {
   text-align: center;
   font-size: 35px;
   margin-top: 180px;
-  background-color: #515864;
-  color: white;
-  /* transition: 0.3s; */
+  background-color: #515864 ;
+  color: #F3E6D2;
+  transition: 0.3s;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-  transform: scale(2);
-  animation: pulse 1.9s infinite;
+  transform: scale(3);
+  animation: pulse 2s infinite;
   font-family: 'Open Sans', sans-serif;
 
   
@@ -101,8 +110,9 @@ nav {
 }
 
 #inspire-btn:hover {
-  background-color: #04F3D3;
-  color: black;
+  background-color:#F3E6D2 ;
+  color: #515864 ;
+
 }
 
 #nature1 {
