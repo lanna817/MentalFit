@@ -44,7 +44,7 @@ class Activity extends React.Component {
       <div>
 
 
-
+      
         <Render activity={this.state.activity} type={this.state.type} handleChange={this.handleChange} handleClick={this.handleClick} />
       </div>
     )

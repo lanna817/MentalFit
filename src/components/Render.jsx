@@ -5,8 +5,12 @@ import { Link } from 'react-router-dom';
 export default function Render(props) {
   return (
 
-    <div>
-      <h1>Get Active</h1>
+    <div className='active-pg'>
+      <h1 className='text-desc'>Get Active</h1>
+
+     
+
+
       {
         <div>
           <h1>{props.activity}</h1>
@@ -31,11 +35,11 @@ export default function Render(props) {
 
         <button id='music' onClick={props.handleClick}>Music</button>
 
-      </div>
-
-      {/* <h1>{props.activity}</h1>
-      <p>{props.type}</p> */}
     </div>
+
+  {/* <h1>{props.activity}</h1>
+      <p>{props.type}</p> */}
+    </div >
   )
 
 
