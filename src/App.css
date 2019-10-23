@@ -9,6 +9,20 @@ a {
   color: black;
 }
 
+h1{
+  color: #273027;
+
+}
+
+p{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:focus { outline: none; }
+
+
 #inspire-btn { 
   padding: 30px;
   text-align: center;
@@ -33,7 +47,7 @@ a {
 
   70% {
       transform: scale(1);
-      box-shadow: 0 0 0 8px rgba(4, 243, 211, 1);
+      box-shadow: 0 0 0 8px rgb(3, 241, 209);
   }
 
   100% {
@@ -41,6 +55,8 @@ a {
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
+
+
 
 #inspire-btn:hover {
   background-color:#F3E6D2 ;
@@ -154,39 +170,104 @@ nav {
 }
 
 
-
 .active-pg {
   position: absolute;
   z-index: 2;
-  top: 20%;
-  border: 1px solid black; 
+  top: 5%;
   text-align: center;
   
-  
+}
+
+.activate-now {
+
+  font-family: 'Architects Daughter', cursive;
+  font-size: 40px;
+  color: black;
 }
 
 .text-desc{
-  padding: 20px;
-  border: 1px solid greenyellow;
+  padding: 10px;
   font-size: 60px;
   font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 
 .button-grp {
-  border: 1px solid orangered;
   padding: 20px;
-
+  opacity: 0.74;
+  
 }
 
 #recreational, #social, #relaxation, 
 #cooking, #education, #busywork, #charity, #music {
+
+  background-color: #8D7068;
   border-radius: 50%;
   margin: 30px;
   padding: 80px;
-  font-size: 23px;
+  font-size: 20px;
   font-family: 'Architects Daughter', cursive;
+  color: white;
+  font-weight: bold;
 
 }
+
+#recreational:hover {
+  animation: shadow-pulse 1s infinite;
+}
+#social:hover{
+  animation: shadow-pulse 1s infinite;
+
+}
+#relaxation:hover{
+  animation: shadow-pulse 1s infinite;
+
+}
+
+#cooking:hover{
+  animation: shadow-pulse 1s infinite;
+
+}
+
+#education:hover{
+  animation: shadow-pulse 1s infinite;
+
+}
+
+#busywork:hover{
+  animation: shadow-pulse 1s infinite;
+
+}
+
+#charity:hover{
+  animation: shadow-pulse 1s infinite;
+
+}
+
+#music:hover{
+  animation: shadow-pulse 1s infinite;
+
+}
+
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(3, 241, 209, 0.8);
+     }
+     100% {
+          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+     }
+}
+
+
+
+
+#inspire-btn:hover {
+  background-color:#F3E6D2 ;
+  color: #515864 ;
+
+}
+
 
 
 /* Background images */

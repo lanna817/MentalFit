@@ -2,19 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
+
+
 export default function Render(props) {
   return (
 
     <div className='active-pg'>
-      <h1 className='text-desc'>Get Active</h1>
+      <h1 className='text-desc'>Choose the type of Activity</h1>
+      <p>Click these buttons as much as you want for more suggestions in that category!</p>
 
      
 
 
       {
         <div>
-          <h1>{props.activity}</h1>
-          <p>{props.type}</p>
+          <h1 className='activate-now'>{props.activity}</h1>
         </div>
       }
       <div className='button-grp'>
@@ -36,9 +38,8 @@ export default function Render(props) {
         <button id='music' onClick={props.handleClick}>Music</button>
 
     </div>
+      
 
-  {/* <h1>{props.activity}</h1>
-      <p>{props.type}</p> */}
     </div >
   )
 

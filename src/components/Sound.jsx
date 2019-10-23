@@ -25,7 +25,7 @@ class Sound extends React.Component{
     return (
       
       <div>
-        <button onClick={this.toggleOn} >{this.state.play ? 'pause' : 'play' }</button>
+        <button id='relax-btn' onClick={this.toggleOn} >{this.state.play ? 'Pause' : 'Relax' }</button>
       </div>
     )
   }

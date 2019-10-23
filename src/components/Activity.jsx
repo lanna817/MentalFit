@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Render from './Render';
+import image from '../images/benchnote.jpg';
 
 
 
@@ -46,6 +47,8 @@ class Activity extends React.Component {
 
       
         <Render activity={this.state.activity} type={this.state.type} handleChange={this.handleChange} handleClick={this.handleClick} />
+        <img id='bench' src={image} width="100%" height='100%' alt='note on bench' />
+
       </div>
     )
 
