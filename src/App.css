@@ -302,11 +302,16 @@ transform: scale(1.4);
   display: flex;
   flex-flow: row wrap ;
 }
+
+#welcome {
+  color: ivory;
+}
 .about-txt {
   position: absolute;
   z-index: 2;
   text-align: center;
-  margin: 100px;
+  margin: 150px;
+  font-family: 'Coming Soon', cursive;
 
 }
 

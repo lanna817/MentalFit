@@ -4,14 +4,15 @@ import rain from '../assets/rain.mp3';
 import energy from '../assets/upbeat.mp3';
 
 
+
 class Sound extends React.Component {
 
   state = {
     play: false,
     playRain: false,
-    playEnergy: false
+    playEnergy: false, 
+  
   }
-
 
   audio = new Audio(music)
 
@@ -52,9 +53,12 @@ class Sound extends React.Component {
   render() {
     return (
       <div className='sound-btn'>
-        <button id='relax-btn' onClick={this.toggleOn} >{this.state.play ? 'Pause' : 'Relax'}</button>
-        <button id='rain-btn' onClick={this.toggleOnRain} >{this.state.play ? 'Pause' : 'Rain'}</button>
-        <button id='energy-btn' onClick={this.toggleOnEnergy} >{this.state.playEnergy ? 'Pause' : 'Energy'}</button>
+
+        <button id='relax-btn' onClick={this.toggleOn} >{this.state.play ? 'Pause' : 'Meditate'} >
+        style={this.soundClick}>
+           </button>
+        <button id='rain-btn' onClick={this.toggleOnRain} >{this.state.play ? 'Pause' : 'Relax'}</button>
+        <button id='energy-btn' onClick={this.toggleOnEnergy} >{this.state.play ? 'Pause' : 'Energy'}</button>
 
       </div>
     )
