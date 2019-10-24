@@ -9,7 +9,7 @@ export default function Render(props) {
 
     <div className='active-pg'>
       <h1 className='text-desc'>Choose the type of Activity</h1>
-      <p>Click these buttons as much as you want for more suggestions in that category!</p>
+      <p>Click these buttons as much as you want for more suggestions!</p>
 
      
 

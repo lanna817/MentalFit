@@ -10,13 +10,6 @@ export default function Site() {
   return (
     <div>
 
-
-      <div id='logo'>
-        {/* <Link to='/site'>
-          <img id="hmlogo" src='mflogo.png' alt='logo home' width="10%" />
-        </Link>   */}
-      </div>
-
       <div className='text-top'>
         <nav>
           <Link to='/activity'>
@@ -32,6 +25,9 @@ export default function Site() {
         </nav>
       </div>
 
+        <Link to='/'>
+          <img id="hmlogo" src='mflogo.png' alt='logo home' width="10%" />
+        </Link>  
       <img id="bghome" src={image} alt="boats on water" width='100%' height='100%' />
     </div>
 

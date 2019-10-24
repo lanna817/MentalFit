@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Render from './Render';
-import image from '../images/benchnote.jpg';
+import image from '../images/road.jpg';
 
 
 
@@ -44,11 +44,12 @@ class Activity extends React.Component {
 
       <div>
 
-
-      
         <Render activity={this.state.activity} type={this.state.type} handleChange={this.handleChange} handleClick={this.handleClick} />
-        <img id='bench' src={image} width="100%" height='100%' alt='note on bench' />
-
+        <Link to='/site'>
+          <img id="hmlogo" src='mflogo.png' alt='logo home' width="11%" />
+        </Link> 
+        <img id='road' src={image} width="100%" height='100%' alt='road and trees' />
+      
       </div>
     )
 

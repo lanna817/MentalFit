@@ -1,9 +1,8 @@
-/* html {
-  scroll-behavior: smooth;
-} */
-body {
-  margin: 0;
+*{
+  cursor: pointer;
+  background-size: cover;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -15,8 +14,8 @@ h1{
 }
 
 p{
-  color: black;
-  font-size: 20px;
+  color: ivory;
+  font-size: 23px;
   font-weight: bold;
 }
 
@@ -35,8 +34,12 @@ button:focus { outline: none; }
   transform: scale(3);
   animation: pulse 2s infinite;
   font-family: 'Open Sans', sans-serif;
+}
 
-  
+#inspire-btn:hover {
+  background-color:#F3E6D2 ;
+  color: #515864 ;
+
 }
 
 @keyframes pulse {
@@ -56,39 +59,32 @@ button:focus { outline: none; }
   }
 }
 
-
-
-#inspire-btn:hover {
-  background-color:#F3E6D2 ;
-  color: #515864 ;
-
-}
-
-
 nav {
-  text-align: center;
-  display: block;
-  padding: 30px;
-  
+  display: flex;
+  align-items: center ;
+  margin: 250px;
+  padding: 20px;
 }
 
 .btn-site {
   font-family: 'Open Sans', sans-serif;
-  opacity: 0.7;  
-  font-size: 30px;
+  opacity: 0.89;  
+  font-size: 25px;
   border-radius: 50%;
-  margin: 150px 150px 80px 150px;
+  margin: 40px;
   padding: 80px;
-  background-color: #DED0CA;
+  background-color:#394846;
   cursor: pointer;
-  box-shadow: 0 2px #999;
   border: none;
+  box-shadow: -5px 10px 5px #000000, -5px 10px 9px #000000 ;
+  color:#DED0CA;
+
 }
 
 .btn-site:hover {
   background-color:#8F867F;
-  opacity: 0.8;
-  color: white;
+  opacity: 0.65;
+  color: black;
 }
 
 
@@ -104,6 +100,10 @@ nav {
 #hmlogo {
   position: absolute;
   z-index: 2;
+}
+
+#hmlogo:hover {
+  transform: scale(1.4);
 }
 
 #quo {
@@ -127,17 +127,13 @@ nav {
   z-index: 2;
   
 }
-/*               Relax                     */
 
-/* .relax-pg{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-} */
+/*               Relax                     */
 
 .sound-btn{
  display: flex;
  justify-content: center; 
+ 
 }
 
 #rain-btn {
@@ -161,8 +157,8 @@ nav {
   font-size: 30px;
   padding: 100px;
   border-radius: 50%;
-  animation: shadow-pulse 1s infinite;
-  background-image: url('https://media.giphy.com/media/5BYCbzhKPrjHCHBezb/source.gif');
+  animation: shadow-pulse 1.4s infinite;
+  background-image: url('https://media.giphy.com/media/6e0NNNM8U7BHW/source.gif');
   color: ivory;
   font-family: 'Open Sans', sans-serif;
   
@@ -176,28 +172,32 @@ nav {
   font-size: 30px;
   padding: 100px;
   border-radius: 50%;
-  animation: shadow-pulse 1s infinite;
+  animation: shadow-pulse 0.5s infinite;
   background-image: url('https://media.giphy.com/media/eo2eanAzPw3Uk/source.gif');
   color: ivory;
   font-family: 'Open Sans', sans-serif;
  
 }
 
+#rain-btn:hover{
+opacity: 0.9;
+transform: scale(1.4);
+}
 
-@keyframes shadow-pulse
-{
-     0% {
-          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
-     }
-     100% {
-          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
-     }
+#relax-btn:hover{
+  opacity: 0.9;
+  transform: scale(1.4);
+} 
+
+#energy-btn:hover{
+  opacity: 0.9;
+  transform: scale(1.4);
 }
 
 @keyframes shadow-pulse
 {
      0% {
-          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 0 0px rgba(03, 241, 209, 0.3);
      }
      100% {
           box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
@@ -214,10 +214,16 @@ nav {
 }
 
 .activate-now {
-
-  font-family: 'Architects Daughter', cursive;
+  
   font-size: 40px;
-  color: black;
+  color: #B39945 ;
+  background-color: black;
+  display: inline;
+  padding: 0.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  opacity: 0.8;
+  
 }
 
 .text-desc{
@@ -229,14 +235,14 @@ nav {
 
 .button-grp {
   padding: 20px;
-  opacity: 0.74;
+  opacity: 0.9;
   
 }
 
 #recreational, #social, #relaxation, 
 #cooking, #education, #busywork, #charity, #music {
 
-  background-color: #8D7068;
+  background-color: #35353B;
   border-radius: 50%;
   margin: 30px;
   padding: 80px;
@@ -244,57 +250,50 @@ nav {
   font-family: 'Architects Daughter', cursive;
   color: white;
   font-weight: bold;
+  box-shadow: -5px 5px 5px #000000, -5px 5px 3px #000000 ;
+  border: none;
 
 }
 
 #recreational:hover {
   animation: shadow-pulse 1s infinite;
+  opacity: 0.55;
+
 }
 #social:hover{
   animation: shadow-pulse 1s infinite;
-
+  opacity: 0.55;
 }
+
 #relaxation:hover{
   animation: shadow-pulse 1s infinite;
-
+  opacity: 0.55;
 }
 
 #cooking:hover{
   animation: shadow-pulse 1s infinite;
-
+  opacity: 0.55;
 }
 
 #education:hover{
   animation: shadow-pulse 1s infinite;
-
+  opacity: 0.55;
 }
 
 #busywork:hover{
   animation: shadow-pulse 1s infinite;
-
+  opacity: 0.55;
 }
 
 #charity:hover{
   animation: shadow-pulse 1s infinite;
-
+  opacity: 0.55;
 }
 
 #music:hover{
   animation: shadow-pulse 1s infinite;
-
+  opacity: 0.55;
 }
-
-
-
-
-
-#inspire-btn:hover {
-  background-color:#F3E6D2 ;
-  color: #515864 ;
-
-}
-
-
 
 /* Background images */
 

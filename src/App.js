@@ -31,18 +31,17 @@ class App extends React.Component {
 
   render() {
     return (
+
       <div className="app">
+
         <Route exact path='/' render={() => (<Intro qod={this.state.quoteOfDay} />)} />
 
-        <main> 
+        <main>
           <div>
-          <Link to='/site'>
-          <img id="hmlogo" src='mflogo.png' alt='logo home' width="10%" />
-        </Link> 
-          <Route path='/site' render={() => (<Site /> )} />
-          <Route path='/activity' render={(props) => (<Activity activities={props.match.params.activities} />)} />
+            <Route path='/site' render={() => (<Site />)}  />
+            <Route path='/activity' render={(props) => (<Activity activities={props.match.params.activities} />)} />
             <Route path='/relax' render={() => (<Relax />)} />
-            </div>
+          </div>
         </main>
       </div>
     );

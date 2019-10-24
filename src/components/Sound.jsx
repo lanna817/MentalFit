@@ -7,7 +7,9 @@ import energy from '../assets/upbeat.mp3';
 class Sound extends React.Component {
 
   state = {
-    play: false
+    play: false,
+    playRain: false,
+    playEnergy: false
   }
 
 
@@ -26,7 +28,7 @@ class Sound extends React.Component {
 
   toggleOnRain = () => {
     this.setState({
-      play: !this.state.play
+      play: !this.state.playRain
     }, () => {
       this.state.play ? this.audioRain.play() : this.audioRain.pause()
 
@@ -37,7 +39,7 @@ class Sound extends React.Component {
 
   toggleOnEnergy = () => {
     this.setState({
-      play: !this.state.play
+      play: !this.state.playEnergy
     }, () => {
       this.state.play ? this.audioEnergy.play() : this.audioEnergy.pause()
 
@@ -52,7 +54,7 @@ class Sound extends React.Component {
       <div className='sound-btn'>
         <button id='relax-btn' onClick={this.toggleOn} >{this.state.play ? 'Pause' : 'Relax'}</button>
         <button id='rain-btn' onClick={this.toggleOnRain} >{this.state.play ? 'Pause' : 'Rain'}</button>
-        <button id='energy-btn' onClick={this.toggleOnEnergy} >{this.state.play ? 'Pause' : 'Energy'}</button>
+        <button id='energy-btn' onClick={this.toggleOnEnergy} >{this.state.playEnergy ? 'Pause' : 'Energy'}</button>
 
       </div>
     )
