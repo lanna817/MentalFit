@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import Activity from './Activity';
 import Relax from './Relax';
 import About from './About';
-import Footer from './Footer';
-import image from '../images/bghome.jpg'
+import image from '../images/bghome.jpg';
 
 export default function Site() {
   return (
@@ -22,6 +21,7 @@ export default function Site() {
           <Link to='/about'>
           <button className='btn-site'>About</button>
           </Link>
+          
         </nav>
       </div>
 

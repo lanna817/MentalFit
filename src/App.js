@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
 import logo from './logo.svg';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { getQuote, getMusic } from './services/api-helper';
 import Intro from './components/Intro';
 import Site from './components/Site';
 import Activity from './components/Activity';
-import Footer from './components/Footer';
 import Relax from './components/Relax';
-
+import About from './components/About';
 
 
 class App extends React.Component {
@@ -41,6 +40,7 @@ class App extends React.Component {
             <Route path='/site' render={() => (<Site />)}  />
             <Route path='/activity' render={(props) => (<Activity activities={props.match.params.activities} />)} />
             <Route path='/relax' render={() => (<Relax />)} />
+            <Route path='/about' render={() => (<About />)} />
           </div>
         </main>
       </div>

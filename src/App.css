@@ -115,7 +115,7 @@ nav {
   color:#17191d;
   font-weight: bold;
   text-align: center;
-  margin-left: 500px;
+  margin-left: 480px;
   width: 50%;
   display: flex;
   flex-flow: row wrap;
@@ -295,6 +295,21 @@ transform: scale(1.4);
   opacity: 0.55;
 }
 
+
+/*        About page     */
+
+.about-pg{
+  display: flex;
+  flex-flow: row wrap ;
+}
+.about-txt {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  margin: 100px;
+
+}
+
 /* Background images */
 
 #nature1 {
@@ -308,11 +323,6 @@ transform: scale(1.4);
 }
 
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
 
 
 
