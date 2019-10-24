@@ -10,11 +10,13 @@ import image from '../images/bghome.jpg';
 export default function Site() {
   return (
     <div>
+       <h2 className='quote-ste'>"My mission in life is not merely to survive, but to thrive; 
+        and to do so with some passion, some compassion, some humor, and some style."
+        
+        <br /> -Maya Angelou
+        </h2>
 
       <div className='text-top'>
-        <h2 className='quote-me'>"Courage doesn’t always roar. Sometimes courage is the little voice at the end of the day that says I’ll try again tomorrow."
-          <br/> – Mary Anne Radmacher
-        </h2>
         <nav>
           <Link to='/activity'>
             <button className='btn-site'>Activity</button>
@@ -32,8 +34,8 @@ export default function Site() {
         <Link to='/'>
           <img id="hmlogo" src='mflogo.png' alt='logo home' width="10%" />
         </Link>  
+    
       <img id="bghome" src={image} alt="boats on water" width='100%' height='100%' />
-
     </div>
 
 

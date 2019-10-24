@@ -56,11 +56,11 @@ class Sound extends React.Component {
 
         <button
           id='relax-btn'
-          onClick={this.toggleOn} style={{ backgroundColor: 'blue' }}> >{this.state.play ? 'Pause' : 'Meditate'}
+          onClick={this.toggleOn}> {this.state.play ? 'Pause' : 'Meditate'}
 
         </button>
         <button id='rain-btn' onClick={this.toggleOnRain} >{this.state.playRain ? 'Pause' : 'Relax'}</button>
-        <button id='energy-btn' onClick={this.toggleOnEnergy} >{this.state.playEnergy ? 'Pause' : 'Energy'}</button>
+        <button id='energy-btn' onClick={this.toggleOnEnergy} >{this.state.playEnergy ? 'Pause' : 'Upbeat'}</button>
 
       </div>
     )

@@ -1,9 +1,8 @@
-*{
-  cursor: pointer;
-  background-size: cover;
+* {
+  margin:0;
 }
-
 a {
+  cursor: pointer;
   text-decoration: none;
   color: black;
 }
@@ -19,16 +18,28 @@ p{
   font-weight: bold;
 }
 
-.quote-me {
-  color: #C35F48;
-  text-align: center;
+.quote-ste {
+  color: #3D4744;
+  text-align: right;
   font-weight: bold;
-  font-size: 25px;
-  margin-top: 10px;
   width: 50%;
-  margin-left: 150px;
+  font-size: 25px;
+  margin-left: 580px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 60px;
+
+}
 
 
+.quote-rel{
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: ivory;
+  width: 50%;
+  margin-left: 350px;
+  margin-top: 10%;
 }
 
 button:focus { outline: none; }
@@ -323,9 +334,16 @@ transform: scale(1.4);
   position: absolute;
   z-index: 2;
   text-align: center;
-  margin: 150px;
+  margin: 100px;
   font-family: 'Coming Soon', cursive;
+  font-size: 40px;
+}
 
+#p-textab {
+  width: 80%;
+  margin-left: 100px;
+  color: ivory;
+  text-align: right;
 }
 
 /* Background images */

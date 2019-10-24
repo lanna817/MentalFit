@@ -11,8 +11,9 @@ export default function About() {
       </Link>
       <div className='about-txt'>
       <h1 id='welcome'>Welcome to Mental Fit</h1>
-      <p> I created this site to because I wanted to focus on building mental toughness and relaxation techniques. Life hits you hard and fast and you need an escape or to keep busy. So Feel free to explore this button centered site as I continue to update with more content.
-          -Y.C.
+      <p id="p-textab"> I created this site to because I wanted to focus on building mental toughness and relaxation techniques. Life hits you hard and fast and you need an escape or to keep busy. So Feel free to explore this button centered site as I continue to update with more content.
+      <br />
+      <br /> -Y.C.
       </p>
       </div>
       <img src={image} alt='notebook and camera' width='100%' height='100%' />
