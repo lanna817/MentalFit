@@ -127,14 +127,34 @@ nav {
   z-index: 2;
   
 }
+/*               Relax                     */
 
-.relax-pg{
+/* .relax-pg{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+} */
+
+.sound-btn{
+ display: flex;
+ justify-content: center; 
+}
+
+#rain-btn {
+  position: absolute;
+  top: 40%;
+  font-size: 30px;
+  padding: 100px;
+  border-radius: 50%;
+  animation: shadow-pulse 1s infinite;
+  background-image: url('https://media.giphy.com/media/o7VvlSM00GT60/source.gif');
+  color: ivory;
+  font-family: 'Open Sans', sans-serif;
+  
 }
 
 #relax-btn {
+  margin-left: -500px;
   top: 40%;
   position: absolute;
   z-index: 2;
@@ -142,7 +162,22 @@ nav {
   padding: 100px;
   border-radius: 50%;
   animation: shadow-pulse 1s infinite;
-  background-image: url('https://media.giphy.com/media/o7VvlSM00GT60/source.gif');
+  background-image: url('https://media.giphy.com/media/5BYCbzhKPrjHCHBezb/source.gif');
+  color: ivory;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+#energy-btn {
+  margin-left: 500px;
+  top: 40%;
+  position: absolute;
+  z-index: 2;
+  font-size: 30px;
+  padding: 100px;
+  border-radius: 50%;
+  animation: shadow-pulse 1s infinite;
+  background-image: url('https://media.giphy.com/media/eo2eanAzPw3Uk/source.gif');
   color: ivory;
   font-family: 'Open Sans', sans-serif;
  
@@ -159,14 +194,14 @@ nav {
      }
 }
 
-@keyframes shadow-pulse-big
+@keyframes shadow-pulse
 {
-  0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
-  }
-  100% {
-    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
-  }
+     0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+     }
 }
 
 
@@ -249,15 +284,6 @@ nav {
 
 }
 
-@keyframes shadow-pulse
-{
-     0% {
-          box-shadow: 0 0 0 0px rgba(3, 241, 209, 0.8);
-     }
-     100% {
-          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
-     }
-}
 
 
 
