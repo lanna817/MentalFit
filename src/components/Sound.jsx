@@ -10,8 +10,8 @@ class Sound extends React.Component {
   state = {
     play: false,
     playRain: false,
-    playEnergy: false, 
-  
+    playEnergy: false,
+
   }
 
   audio = new Audio(music)
@@ -29,9 +29,9 @@ class Sound extends React.Component {
 
   toggleOnRain = () => {
     this.setState({
-      play: !this.state.playRain
+      playRain: !this.state.playRain
     }, () => {
-      this.state.play ? this.audioRain.play() : this.audioRain.pause()
+      this.state.playRain ? this.audioRain.play() : this.audioRain.pause()
 
     })
   }
@@ -40,9 +40,9 @@ class Sound extends React.Component {
 
   toggleOnEnergy = () => {
     this.setState({
-      play: !this.state.playEnergy
+      playEnergy: !this.state.playEnergy
     }, () => {
-      this.state.play ? this.audioEnergy.play() : this.audioEnergy.pause()
+      this.state.playEnergy ? this.audioEnergy.play() : this.audioEnergy.pause()
 
     })
   }
@@ -54,11 +54,13 @@ class Sound extends React.Component {
     return (
       <div className='sound-btn'>
 
-        <button id='relax-btn' onClick={this.toggleOn} >{this.state.play ? 'Pause' : 'Meditate'} >
-        style={this.soundClick}>
-           </button>
-        <button id='rain-btn' onClick={this.toggleOnRain} >{this.state.play ? 'Pause' : 'Relax'}</button>
-        <button id='energy-btn' onClick={this.toggleOnEnergy} >{this.state.play ? 'Pause' : 'Energy'}</button>
+        <button
+          id='relax-btn'
+          onClick={this.toggleOn} style={{ backgroundColor: 'blue' }}> >{this.state.play ? 'Pause' : 'Meditate'}
+
+        </button>
+        <button id='rain-btn' onClick={this.toggleOnRain} >{this.state.playRain ? 'Pause' : 'Relax'}</button>
+        <button id='energy-btn' onClick={this.toggleOnEnergy} >{this.state.playEnergy ? 'Pause' : 'Energy'}</button>
 
       </div>
     )

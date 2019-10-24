@@ -19,6 +19,18 @@ p{
   font-weight: bold;
 }
 
+.quote-me {
+  color: #C35F48;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;
+  width: 50%;
+  margin-left: 150px;
+
+
+}
+
 button:focus { outline: none; }
 
 
@@ -78,6 +90,7 @@ nav {
   border: none;
   box-shadow: -5px 10px 5px #000000, -5px 10px 9px #000000 ;
   color:#DED0CA;
+  margin-top: 0;
 
 }
 

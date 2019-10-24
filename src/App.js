@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import logo from './logo.svg';
 import { Route } from 'react-router-dom';
-import { getQuote, getMusic } from './services/api-helper';
+import { getQuote, getLove, getMusic } from './services/api-helper';
 import Intro from './components/Intro';
 import Site from './components/Site';
 import Activity from './components/Activity';
@@ -16,6 +16,7 @@ class App extends React.Component {
     this.state = {
 
       quoteOfDay: [],
+      quoteLove: ''
 
 
     }
@@ -27,6 +28,7 @@ class App extends React.Component {
     this.setState({ quoteOfDay: quotes })
   }
 
+  
 
   render() {
     return (
